@@ -1,5 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #1A1A1A;
+}
+
+.Header h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.Container ul {
+  padding: 0;
+}
+
+.Container h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.Container img {
+  width: 250px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  object-fit: contain;
+}
+
+.Imagecontainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Imagecontainer img {
+  width: 80%;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #CCCCCC;
+}
+
+.List {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.List li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Kop {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Buttonstyling {
+  width: 100px;
+  height: 40px;
+  background-color: #cee8d6;
+  border-radius: 50px;
+  padding: 0;
+}
+
+.Buttonstyling p {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Buttoncontainer {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.Leverans {
+  font-size: 12px;
+  color: #9d9fa2;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 80%;
+  }
+
+  .Container {
+    width: 100%;
+  }
+
+  .Container h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .Container img {
+    width: 300px;
+  }
+
+  .Imagecontainer img {
+    width: auto;
+    height: 180px;
+  }
+
+  .Buttonstyling {
+    width: 250px;
+  }
+
+  .Kop {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    height: 50px;
+  }
+
+  .Kop p {
+    margin: 0;
+  }
+
+  .Buttoncontainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .List {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .List li {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .Leverans {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .Container {
+    width: 40%;
+  }
+
+  .Container h2 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .Container img {
+    width: 250px;
+  }
+
+  .Imagecontainer img {
+    width: auto;
+    height: 180px;
+  }
+
+  .Buttonstyling {
+    width: 250px;
+  }
+
+  .Leverans {
+    font-size: 12px;
+    color: #9d9fa2;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .Kop {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    height: 50px;
+  }
+
+  .Kop p {
+    margin: 0;
+  }
+
+  .Buttoncontainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .List {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Leverans {
+    color: #9d9fa2;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 }
